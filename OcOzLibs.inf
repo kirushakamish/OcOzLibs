@@ -1,0 +1,68 @@
+[Defines]
+  INF_VERSION                         = 0x00010005
+  BASE_NAME                           = OcOzLibs
+  FILE_GUID                           = 765D4A97-D494-420F-B5CC-74937450AB67
+  MODULE_TYPE                         = UEFI_DRIVER
+  VERSION_STRING                      = 1.0
+  INF_VERSION                         = 0x00010005
+  EDK_RELEASE_VERSION                 = 0x00020000
+  EFI_SPECIFICATION_VERSION           = 0x00010000
+  ENTRY_POINT                         = OcOzLibsEntryPoint
+
+[Sources.Common]
+  OcOzLibs.c
+
+[Packages]
+  OcOzLibs/OcOzLibs.dec
+  OpenCorePkg/OpenCorePkg.dec
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  UefiCpuPkg/UefiCpuPkg.dec
+
+[Guids]
+  gOcVendorVariableGuid
+
+[Protocols]
+  gEfiDevicePathProtocolGuid          ## CONSUMES
+  gEfiLoadedImageProtocolGuid         ## CONSUMES
+  gEfiSimpleFileSystemProtocolGuid    ## CONSUMES
+  gOcBootstrapProtocolGuid            ## CONSUMES
+  gOcInterfaceProtocolGuid            ## SOMETIMES_CONSUMES
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  BaseOverflowLib
+  CommonMemoryAllocationLib
+  DebugLib
+  DebugPrintErrorLevelLib
+  DevicePathLib
+  HobLib
+  IoLib
+  MemoryAllocationLib
+  MemoryProfileLib
+  OcAppleKernelLib
+  OcCompressionLib
+  OcCpuLib
+  OcDataHubLib
+  OcDevicePathLib
+  OcDirectResetLib
+  OcFileLib
+  OcFlexArrayLib
+  OcMachoLib
+  OcMiscLib
+  OcStringLib
+  OcVariableLib
+  OcXmlLib
+  PcdLib
+  PciCf8Lib
+  PciLib
+  PlatformHookLib
+  PrintLib
+  RegisterFilterLib
+  SerialPortLib
+  SortLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  UefiLib
+  UefiRuntimeServicesTableLib

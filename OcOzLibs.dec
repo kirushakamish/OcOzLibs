@@ -1,0 +1,84 @@
+[Defines]
+  PACKAGE_NAME      = OcOzLibs
+  PACKAGE_GUID      = 765D4A97-D494-420F-B5CC-74937450AB67
+  PACKAGE_VERSION   = 1.0
+  DEC_SPECIFICATION = 0x00010005
+
+[Includes]
+  Include/Acidanthera
+  Include/Apple
+  Include/Generic
+  Include/Grub2
+  Include/Intel
+
+[Includes.AArch64]
+  # Include/Acidanthera/AArch64
+  Include/Apple/AArch64
+  # Include/Generic/AArch64
+  # Include/Intel/AArch64
+
+[Includes.Arm]
+  # Include/AMI/Arm
+  # Include/Acidanthera/Arm
+  Include/Apple/Arm
+  # Include/Generic/Arm
+  # Include/Intel/Arm
+
+[Includes.Ebc]
+  # Include/Acidanthera/Ebc
+  Include/Apple/Ebc
+  # Include/Generic/Ebc
+  # Include/Intel/Ebc
+
+[Includes.Ia32]
+  # Include/Acidanthera/Ia32
+  Include/Apple/Ia32
+  # Include/Generic/Ia32
+  # Include/Intel/Ia32
+
+[Includes.X64]
+  # Include/Acidanthera/X64
+  Include/Apple/X64
+  # Include/Generic/X64
+  # Include/Intel/X64
+
+[Guids]
+  ## Include/Acidanthera/Guid/OcVariable.h
+  gOcVendorVariableGuid                      = { 0x4D1FDA02, 0x38C7, 0x4A6A, { 0x9C, 0xC6, 0x4B, 0xCC, 0xA8, 0xB3, 0x01, 0x02 }}
+
+  ## Include/Acidanthera/Guid/OcVariable.h
+  gOcReadOnlyVariableGuid                    = { 0xE09B9297, 0x7928, 0x4440, { 0x9A, 0xAB, 0xD1, 0xF8, 0x53, 0x6F, 0xBF, 0x0A }}
+
+  ## Include/Acidanthera/Guid/OcVariable.h
+  gOcWriteOnlyVariableGuid                   = { 0xF0B9AF8F, 0x2222, 0x4840, { 0x8A, 0x37, 0xEC, 0xF7, 0xCC, 0x8C, 0x12, 0xE1 }}
+
+[LibraryClasses]
+  ##  @libraryclass
+  OcAppleKernelLib|Include/Acidanthera/Library/OcAppleKernelLib.h
+
+  ##  @libraryclass
+  OcCompressionLib|Include/Acidanthera/Library/OcCompressionLib.h
+
+  ##  @libraryclass
+  OcCpuLib|Include/Acidanthera/Library/OcCpuLib.h
+
+  ##  @libraryclass
+  OcDevicePathLib|Include/Acidanthera/Library/OcDevicePathLib.h
+
+  ##  @libraryclass
+  OcFileLib|Include/Acidanthera/Library/OcFileLib.h
+
+  ##  @libraryclass
+  OcMachoLib|Include/Acidanthera/Library/OcMachoLib.h
+
+  ##  @libraryclass
+  OcMiscLib|Include/Acidanthera/Library/OcMiscLib.h
+
+  ##  @libraryclass
+  OcStringLib|Include/Acidanthera/Library/OcStringLib.h
+
+  ##  @libraryclass
+  UefiBootServicesTableLib|Include/Acidanthera/Library/UefiBootServicesTableLib.h
+
+
+
