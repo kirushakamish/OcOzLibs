@@ -1,4 +1,4 @@
-OpenCore libraries for kernel processing are put into a separate UEFI driver. Use at your own risk. Project in development
+OpenCore libraries for kernel processing are put into a separate UEFI driver. Use with Ozmosis. Use at your own risk. Project in development
 Credits:
 Apple for macOS
 Acidanthera for OpenCore
